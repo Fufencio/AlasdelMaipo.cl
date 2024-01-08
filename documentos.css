@@ -1,0 +1,371 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap');
+
+/* Estilos generales */
+body {
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  line-height: 1.6;
+}
+
+/* Estilos para el encabezado */
+.about-section {
+  background-image: url(images/background2.webp);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  text-align: center;
+  padding: 50px 0;
+  border-radius: 10px;
+  animation: moveBackground 180s infinite linear;
+  color: #fff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes moveBackground {
+  from {
+    background-position: bottom left;
+  }
+  to {
+    background-position: top right;
+  }
+}
+
+
+.nav-links {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  width: 100%;
+  text-align: center;
+  z-index: 99;
+  top: 60px;
+}
+
+.nav-links ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-links ul li {
+  margin-bottom: 10px;
+}
+
+.nav-links ul li a {
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  color: #333;
+}
+
+.nav-logo img {
+  height: 40px; /* Tamaño de logo establecido */
+  vertical-align: middle;
+}
+
+/* Estilos para los videos */
+h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 2em;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.column {
+  flex: 0 0 calc(220% - 2%); /* Calcula el ancho para cuatro columnas, restando el espacio entre ellas */
+  max-width: calc(25% - 2%); /* Asegura que el ancho máximo sea para cuatro columnas, restando el espacio entre ellas */
+  box-sizing: border-box; /* Tamaño que incluye el padding */
+  padding: 10px; /* Espacio interno de las tarjetas */
+}
+
+.column .card {
+  /* ... (otros estilos) */
+  background-color: #fff; /* Color de fondo */
+  /* ... (otros estilos) */
+}
+
+
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s;
+  background-color: white;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  height: 100%; /* Hace que todas las cards tengan la misma altura */
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card img {
+  width: 200px;
+  height: 335px; /* Establece una altura fija para las imágenes */
+  object-fit: cover; /* Ajusta la imagen para cubrir el espacio definido */
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.container {
+  padding: 15px;
+  height: 100%; /* Hace que todas las containers tengan la misma altura */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+
+.container h2 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+  text-align: center; /* Centra el nombre del presidente */
+}
+
+.container p {
+  font-size: 1.1em;
+  margin-bottom: 10px;
+  text-align: center; /* Centra el contenido */
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Centra las tarjetas horizontalmente */
+  gap: 20px; /* Espacio entre las tarjetas */
+}
+
+.button {
+  display: inline-block;
+  padding: 8px 16px;
+  text-align: center;
+  text-decoration: none;
+  background-color: #333;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  transition: background-color 0.3s, transform 0.2s;
+  align-self: center; /* Centra el botón */
+}
+.button:hover {
+  background-color: #555;
+  transform: translateY(-2px);
+}
+
+.video-player {
+  width: 100%;
+}
+
+/* Estilos para los documentos */
+.documents-section {
+  background-color: #f9f9f9;
+  padding: 50px 0;
+  text-align: center;
+}
+ 
+.documents-section h2 {
+  margin-bottom: 30px;
+  font-size: 28px;
+  color: #333;
+ }
+ 
+.document-list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+ 
+.document-item {
+  margin: 10px;
+  overflow: hidden;
+  position: relative;
+}
+ 
+.document-item a {
+  display: inline-block;
+  padding: 15px 30px;
+  background-color: #f44336;
+  text-decoration: none;
+  color: #fff;
+  border-radius: 8px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  font-size: 16px;
+  font-weight: bold;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+}
+ 
+.document-item a::before {
+  content: '';
+  position: absolute;
+  top: -10%;
+  left: -10%;
+  width: 120%;
+  height: 120%;
+  background-color: #ba251f;
+  transform: rotate(-45deg);
+  transition: all 0.3s ease;
+  z-index: -1;
+}
+ 
+.document-item a:hover::before {
+  top: 0;
+  left: 0;
+}
+ 
+/* Pie de página */
+/*Footer*/
+
+/*Footer*/
+
+.footer{
+  width: 100%;
+  text-align: center;
+  padding: 30px 0;
+  background-color: rgba(255, 255, 255, 1);
+}
+.footer h4{
+  margin-bottom: 25px;
+  margin-top: 20px;
+  font-weight: 600;
+
+}
+.icons a {
+  color: #081401;
+  margin: 0 13px;
+  cursor: pointer;
+  padding: 18px;
+  font-size: 24px;
+}
+
+.fa-plane {
+  color: #f44336;
+}
+
+.fa-facebook {
+  color: #1877f2; 
+}
+
+.fa-instagram {
+  color: #bc2a8d; 
+}
+
+.fa-twitter {
+  color: #1da1f2; 
+}
+
+.fa-whatsapp {
+  color: #25d366; 
+}
+
+
+.icons {
+  gap: 0;
+}
+
+.icons a {
+  text-decoration: none;
+  color: inherit;
+}
+.cursos, .ubicacion, .facilidades, .comentarios, .cta, .footer {
+  background-color: rgba(255, 255, 255, 0.7);
+}
+
+@media (max-width: 768px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+  
+  .document-item a {
+    padding: 12px 24px;
+    font-size: 14px;
+  }
+  
+  .documents-section {
+    background-color: #ddd;
+  }
+}
+
+
+/* Galería */
+
+*{
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+}
+
+#galeria {
+  background-color: #f5f5f5;
+  background: rgba( 255, 255, 255, 0.6 );
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter: blur( 4px );
+  -webkit-backdrop-filter: blur( 4px );
+  border-radius: 10px;
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
+  padding: 40px 0; /* Relleno superior e inferior de la sección */
+  margin-top: 20px; /* Margen superior para separación */
+}
+
+.gallery{
+  width: 900px;
+  display: flex;
+  overflow-x: scroll;
+  background-color: #fff;
+  background: rgba( 255, 255, 255, 0.9 );
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter: blur( 4px );
+  -webkit-backdrop-filter: blur( 4px );
+  border-radius: 10px;
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+
+.gallery div{
+  width: 100%;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-gap: 20px;
+  padding: 10px;
+  flex: none;
+}
+
+.gallery div img {
+  max-width: 290px; /* Ancho máximo para las imágenes */
+  height: 300px;
+  filter: grayscale(100%);
+  transition: transform 0.5s;
+  border-radius: 9px;
+}
+.gallery::-webkit-scrollbar{
+  display: none;
+}
+
+.gallery-wrap{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10% auto;
+}
+#backBtn, #nextBtn{
+  width: 50px;
+  cursor: pointer;
+  margin: 40px;
+}
+.gallery div img:hover{
+  filter: grayscale(0);
+  cursor: pointer;
+  transform: scale(1.1);
+}

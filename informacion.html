@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="images/Logo-recorte-circular.png" type="image/x-icon">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Impresión de Licencias de Vuelo</title>
+  <link rel="stylesheet" href="imprimir.css">
+  <link rel="icon" href="images/logotittle.jpeg" type="image/x-icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rethink+Sans:ital,wght@0,400;0,500;1,400;1,500;1,800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="login.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="icon" href="images/logotittle.jpeg" type="image/x-icon">
+  <title>Cursos de Piloto</title>
+  <!-- Integrar Bootstrap CSS -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    /* Estilos personalizados */
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f5f5f5;
+      color: #333;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #8d99a7;
+      color: white;
+      padding: 40px 0;
+      text-align: center;
+      position: relative;
+      background-image: linear-gradient(to right, #929fad, #61a0df);
+    }
+
+    .logo {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      position: absolute;
+      top: 20px;
+      left: 20px;
+    }
+
+    section {
+    background-color: #f9f9f9;
+    margin-bottom: 40px;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    color: #333;
+    background-color: #ffffff;
+    background-image: linear-gradient(to bottom, #ffffff, #f9f9f9);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    }
+    h2 {
+      color: #007BFF;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+
+    p {
+      font-size: 18px;
+      line-height: 1.6;
+    }
+
+    footer {
+      background-color: #007BFF;
+      color: white;
+      text-align: center;
+      padding: 20px 0;
+      margin-top: 40px;
+    }
+
+    main {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+
+    .card {
+      width: 300px;
+      margin-bottom: 30px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      border-radius: 10px;
+      overflow: hidden;
+      flex-basis: calc(33.33% - 20px);
+      margin-right: 20px;
+      margin-left: 20px;
+    }
+
+    .card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .card-content {
+      padding: 20px;
+    }
+
+    .card h2 {
+      font-size: 24px;
+      margin-bottom: 10px;
+      color: #007BFF;
+    }
+
+    .card p {
+      font-size: 16px;
+      line-height: 1.5;
+      margin-bottom: 20px;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #007BFF;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      transition: background-color 0.3s ease;
+    }
+
+    .btn:hover {
+      background-color: #0056b3;
+    }
+    #profesores {
+      background-color: #f5f5f5;
+      background-image: linear-gradient(to top, #f5f5f5, #ffffff);
+      padding: 40px;
+    }
+
+    #profesores .card {
+      width: calc(33.33% - 20px);
+      margin-right: 20px;
+      margin-bottom: 20px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      border-radius: 10px;
+      overflow: hidden;
+    }
+
+    #profesores .card img {
+      width: 100%;
+      height: 500px;
+      object-fit: cover;
+    }
+
+    #profesores .card-content {
+      padding: 20px;
+    }
+
+    #profesores .card h2 {
+      font-size: 24px;
+      margin-bottom: 10px;
+      color: #007BFF;
+    }
+
+    #profesores .card p {
+      font-size: 16px;
+      line-height: 1.5;
+      margin-bottom: 20px;
+    }
+
+    footer {
+      background-image: linear-gradient(to right, #929fad, #003366); /* Cambia gradiente de fondo */
+    }
+
+    @media screen and (max-width: 768px) {
+    header {
+      padding: 20px 0;
+    }
+  
+  .logo {
+    width: 40px;
+    height: 40px;
+    top: 10px;
+    left: 10px;
+  }
+  
+  h1 {
+    font-size: 24px;
+  }
+  
+  .navbar-nav {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .navbar-nav .nav-item {
+    margin-bottom: 10px;
+  }
+  
+  .card {
+  width: calc(110% - 40px); 
+  margin-right: 10px;
+  margin-left: 10px;
+}
+  .card img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+  .card-content{
+    width: 150px;
+  }
+  #profesores .card {
+    width: calc(110% - 40px);
+    margin-bottom: 20px;
+  }
+  #profesores .card img {
+    height: 180px;
+    object-fit: cover;
+  }
+}
+.footer{
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+    background-color: rgba(255, 255, 255, 1);
+}
+.footer h4{
+    margin-bottom: 25px;
+    margin-top: 20px;
+    font-weight: 600;
+
+}
+.icons a {
+    color: #081401;
+    margin: 0 13px;
+    cursor: pointer;
+    padding: 18px;
+    font-size: 24px;
+}
+
+.fa-plane {
+    color: #f44336;
+}
+
+.fa-facebook {
+    color: #1877f2; 
+}
+
+.fa-instagram {
+    color: #bc2a8d; 
+}
+
+.fa-twitter {
+    color: #1da1f2; 
+}
+
+.fa-whatsapp {
+    color: #25d366; 
+}
+
+
+.icons {
+    gap: 0;
+}
+
+.icons a {
+    text-decoration: none;
+    color: inherit;
+}
+  </style>
+</head>
+<body>
+  <header>
+    <a href="index.html">
+      <img src="images/logo.jpg" alt="Logo" class="logo">
+    </a>
+    <h1>🛩️ Cursos de Piloto 🛩️</h1>
+    <p>Descubre los cursos de Piloto Privado, Piloto Comercial e Instructor de vuelo.</p>
+  </header>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <div class="collapse navbar-collapse">
+      <ul class="navbar-nav mx-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="#piloto_privado">Piloto Privado</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#piloto_comercial">Piloto Comercial</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#instructor_piloto">Instructor de Piloto</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <main>
+    <div class="row px-3">
+    <section id="piloto_privado" class="col-md-4">
+      <h2>Piloto Privado</h2>
+
+      <strong>Valor del curso año 2023: </strong>  200UF. Incluye programa teórico + 
+      más apoyo adicional y 40 horas del programa autorizado por DGAC. 
+      No incluye hora de examen ni horas adicionales. <br> <br>
+
+      <strong>Duración aproximada:</strong> Un Año. Depende de la disponibilidad del alumno, 
+      meteorología y agenda del avión por mantenciones periódicas. <br> <br>
+
+
+      <strong>Requisitos mínimos:</strong> 17 años de edad con autorización de los padres, 
+      certificado médico C1 o C2, ser socio del club y tener sus cuotas al día. <br> <br>
+
+      <strong>Pregunta por facilidades y formas de pago.</strong>
+      <a href="https://wa.me/+56967236616/?text=Hola,%20me%20interesa%20obtener%20información%20sobre%20el%20curso%20de%20Piloto%20privado." class="btn" target="_blank">Más información</a>
+    </section>
+
+    <section id="piloto_comercial" class="col-md-4">
+      <h2>Piloto Comercial</h2>
+
+      <strong>Valor del curso año 2023:</strong>  $1.200.000. Incluye programa teórico + 
+      más apoyo adicional 
+      y 10 horas del programa autorizado por DGAC. No incluye 
+      hora de examen ni horas adicionales.  <br> <br>
+
+      <strong>Duración aproximada:</strong> Tres a Seis Meses. 
+      Depende de la disponibilidad del alumno, 
+      meteorología y agenda del avión por mantenciones periódicas. <br> <br>
+
+      <strong>Requisitos mínimos:</strong>18 años de edad, certificado 
+      médico C1 o C2, ser socio del club y tener sus cuotas al día. 
+      200 Horas de vuelo totales para habilitación de Ayudante y 300 hrs. 
+      para Habilitación de Instructor. Del total de las horas anteriores 
+      50 horas deben haber sido voladas en el material del Club. <br> <br>
+
+      <strong>Pregunta por facilidades y formas de pago.</strong>
+      <a href="https://wa.me/+56967236616/?text=Hola,%20me%20interesa%20obtener%20información%20sobre%20el%20curso%20de%20Piloto%20comercial." class="btn" target="_blank">Más información</a>
+    </section>
+
+    <section id="instructor_de_vuelo" class="col-md-4">
+      <h2>Instructor de vuelo</h2>
+      <strong>Valor del curso año 2023:</strong> $2.400.000. Incluye programa teórico + 
+      más apoyo adicional y 20 horas del programa autorizado por DGAC. 
+      No incluye hora de examen ni horas adicionales.  <br> <br>
+
+      <strong>Duración aproximada:</strong>Tres a Seis Meses. 
+      Depende de la disponibilidad del alumno, 
+      meteorología y agenda del avión por mantenciones periódicas.  <br> <br>
+
+      <strong>Requisitos mínimos:</strong> 18 años de edad, certificado médico C1, 
+      ser socio del club y tener sus cuotas al día. 180 Horas de vuelo totales 
+      y de esas, 50 horas deben haber sido voladas en el material del Club. 
+      Como requisito adicional para la obtención de Licencia de Piloto Comercial, 
+      la Autoridad Aeronáutica exige que se deben tener, a lo menos, 10 horas en 
+      bitácora de instrucción de vuelo por instrumentos y
+       de esas 10 horas, cinco pueden ser en simulador.  <br> <br>
+
+       <strong>Pregunta por facilidades, formas de pago y convenios. </strong>
+      <a href="https://wa.me/+56967236616/?text=Hola,%20me%20interesa%20obtener%20información%20sobre%20el%20curso%20de%20Instructor%20de vuelo." class="btn" target="_blank">Más información</a>
+    </section>
+  </div>
+
+    <!-- Sección de Profesores -->
+    <section id="profesores">
+      <h2 class="text-center mb-4">Instructores de vuelo</h2>
+      <div class="row justify-content-around">
+        <div class="card col-lg-3 col-md-5 mb-4">
+          <img src="images/instructorj.jpg" alt="Curso 1">
+          <div class="card-content p-3">
+            <h2>Jorge Núñez Flores</h2>
+            <p>Piloto Comercial <br>
+              Instructor Teórico
+              </p>
+          </div>
+        </div>
+        <div class="card col-lg-3 col-md-5 mb-4">
+          <img src="images/instructormario.jpg" alt="Curso 2">
+          <div class="card-content p-3">
+            <h2>Mario Barra Carrasco</h2>
+            <p>Piloto Privado <br>
+              Instructor de vuelo</p>
+          </div>
+        </div>
+        <div class="card col-lg-3 col-md-5 mb-4">
+          <img src="images/instructorjorge.jpg" alt="Curso 3">
+          <div class="card-content p-3">
+            <h2>Jorge Castillo Torres</h2>
+            <p>Piloto Privado <br>
+              Instructor de vuelo</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <section class="footer" id="footer">
+    <h4>Sobre nosotros</h4>
+    <p>
+        Somos Los Pilotos del Maipo; Camaradería, Amistad y Empuje. <br>
+         A volar a volar!! Te esperamos en el Aeródromo de Curacaví.
+    </p>
+    <div class="icons">
+        <a href="https://www.facebook.com/alasdel.maipo/" target="_blank">
+            <i class="fa fa-facebook"></i>
+        </a>
+        <a href="https://www.instagram.com/caam.cl/" target="_blank">
+            <i class="fa fa-instagram"></i>
+        </a>
+        <a href="https://twitter.com" target="_blank">
+            <i class="fa fa-twitter"></i>
+        </a>
+        <a href="https://wa.me/+56967236616" target="_blank">
+            <i class="fa fa-whatsapp"></i>
+        </a>
+    </div>
+    <p> &copy; 2024 Club Aéreo Alas del Maipo <br> Created By: Fufudev <i class="fa fa-plane"></i></p>
+</section>
+  <!-- Integrar Bootstrap JS y jQuery -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+  <script>
+    // Función para mostrar u ocultar secciones
+    function toggleSection(sectionId) {
+      const section = document.getElementById(sectionId);
+      if (section.classList.contains('hidden')) {
+        section.classList.remove('hidden');
+      } else {
+        section.classList.add('hidden');
+      }
+    }
+  </script>
+</body>
+</html>

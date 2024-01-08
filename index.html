@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Escuela de vuelo y Club Aéreo, desde el 2016 uniendo a los grandes pilotos históricos nacionales con las nuevas generaciones de aviadores.">
+    <title>Club Aéreo Alas del Maipo</title>
+    <!-- Agregando favicon -->
+    <link rel="icon" href="images/Logo-recorte-circular.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Enlaces a hojas de estilo -->
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="login.css">
+    <!-- Enlaces a fuentes externas -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rethink+Sans:ital,wght@0,400;0,500;1,400;1,500;1,800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <section class="header animate-header" id="home">
+        <nav>
+            <a href="#home"><img src="images/logo.jpg"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="informacion.html" target="_blank">Cursos</a></li>
+                    <li><a href="#ubicacion">Ubicación</a></li>
+                    <li><a href="#facilidades">Facilidades</a></li>
+                    <li><a href="#comentarios">Opiniones</a></li>
+                    <li><a href="#cta">Contacto</a></li>
+                    <li><a href="ptz.html" target="_blank">Misceláneos</a></li>
+                    <li><a href="imprimir.html" target="_blank">¡Imprime tu licencia!</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <div class="text-box">
+            <h1>Alas del Maipo</h1>
+            <p>Descubre el fascinante mundo de la aviación con nosotros. Ofrecemos cursos de vuelo, instrucción de calidad y más.</p>
+            <a href="#cta" class="hero-btn scroll-btn">¡Visítanos!</a>
+        </div>
+    </section>
+
+
+<section class="About">
+        <h1>¿Quiénes somos?</h1>
+        <p>Un poco de historia.. <br>
+            En la historia de la humanidad, el hombre siempre ha mirado al cielo con el intrínseco deseo de volar.
+             Deseo que, a través de los años, se ha cumplido y se ha mejorado con la experiencia; en sus inicios con 
+             pocas herramientas y certezas científicas, solamente abrazados a la pasión y a la suerte. Los años, la 
+             experiencia, el desarrollo tecnológico y la ciencia han avanzado a pasos agigantados y han mejorado
+             el desarrollo de la aviación, sin embargo, la pasión por el vuelo se ha mantenido intacta.  <br> <br> 
+
+
+             Es por lo que el año 2016, dos grandes amigos sintieron la necesidad de entregar sus esfuerzos, conocimientos y 
+             energía a la comunidad, fomentando el desarrollo de la aviación a las personas; Fue entonces que estos aviadores y 
+             amigos decidieron que debían enfocarse a crear un Club Aéreo. Se pusieron manos a la obra en asesorase con los términos
+              administrativos y normativos con el fin de invitar primeramente a sus cercanos a hacerse partícipes de esta corporación, 
+              sumándose inmediatamente a ellos nuevos aviadores; Pilotos de Líneas Aérea, Comerciales, Privados, 
+             Alumnos y otros Profesionales junto a sus familias e hijos; quienes darían el punta pie inicial al proyecto Alas del Maipo.  <br> <br> 
+
+             Al año siguiente, y con las tareas definidas, los socios del Club 
+             lograrían la adquisición de un Cessna 172F CC-PTZ con el que comenzarían a 
+             proyectarse para iniciar los cursos de vuelo en el Aeródromo de Curacaví (SCCV), 
+             estableciendo esta ubicación como centro de operaciones, donde junto a nuestras familias y 
+             gracias al apoyo de este Club Aéreo en Curacaví, contamos con todas las comodidades necesarias para 
+             hacer vida de camaradería junto a otros destacados pilotos, amigos, escuelas de vuelo, aviadores, entusiastas 
+             y comunidad en general quienes suelen volar en este sector y disfrutar de la aviación. Que no es más que eso; disfrutar, 
+             descansar y vivir la pasión de volar junto a quienes queremos y nos quieren. Estamos recién partiendo, con ganas, empuje y entusiasmo,
+              a veces cuesta y parece que nos movemos lento. 
+             Pero esto recién comienza y quienes quieran participar y sumarse a ser parte de esta historia inicial del Alas del Maipo. Sean Bienvenidos. A volar a volar.
+            </p>
+    
+        <div class="row">
+            <div class="About-col">
+                <h3>Propósito</h3>
+                <button class="read-more-btn" onclick="toggleTexto()">Leer más</button>
+                <p class="additional-text hidden purpose">Nuestro propósito, nuestra misión tiene como objeto crear la 
+                    oportunidad de encuentro positivo de camaradería de amistad de 
+                    apoyo, crecimiento y felicidad en quienes aman y disfrutan la aviación, 
+                    en un ambiente familiar y de sana convivencia. <br> <br>
+
+                    Bajo esta premisa también queremos que la comunidad tenga acceso a la 
+                    aviación civil e impartir instrucción teórica y práctica a los alumnos del club 
+                    y a quienes deseen sumarse a cumplir su sueño. <br> <br>
+
+                    También somos un medio de entretención, de traslado y de ayuda en caso de 
+                    catástrofes o emergencias, poniéndonos al servicio de la comunidad o de las 
+                    autoridades cuando se necesite el apoyo, siendo un puente aéreo que entre las 
+                    diferentes comunidades y dispersa geografía nacional; teniendo siempre como 
+                    estandarte la seguridad, 
+                    el perfeccionamiento y exigencia continua en nuestros pilotos. </span>
+
+                </p>
+            </div>
+            <div class="About-col center-values">
+                <h3>Valores</h3>
+                <button class="read-more-btn">Leer más</button>
+                <p class="additional-text hidden">
+                    Un club aéreo se fundamenta en valores sólidos que fomentan la excelencia, el compañerismo y el progreso en la aviación. Estos valores son los cimientos sobre los cuales se construye una comunidad de entusiastas del vuelo, dando forma a un ambiente de respeto mutuo, aprendizaje continuo y seguridad sin compromisos. En nuestra visión, estos valores significan mucho más que simples palabras; representan nuestro compromiso con la seguridad operativa, el cuidado del entorno, la pasión por la aventura y la promoción de la camaradería entre nuestros miembros. Nos esforzamos por mantener una cultura arraigada en la integridad, la responsabilidad y el espíritu de colaboración, creando así un ambiente en el que cada individuo se sienta parte de una familia unida por la pasión por volar. Creemos en la promoción de valores como el respeto por la diversidad, la innovación constante y la ética profesional, aspectos que engrandecen nuestra comunidad y fortalecen nuestra dedicación al mundo de la aviación.
+                </p>
+            </div>
+            <div class="About-col">
+                <h3>Visión</h3>
+                <button class="read-more-btn">Leer más</button>
+                <p class="additional-text hidden">Somos más que un club aéreo; somos un hogar para quienes comparten los valores fundamentales de la amistad, el apoyo mutuo y la camaradería. Nuestro club está formado por personas que alguna vez miraron al cielo y vieron los aviones pasar como algo inalcanzable, un sueño que parecía lejano. Buscamos convertirnos en la realización de ese sueño para aquellos niños que detenían sus juegos solo para mirar maravillados cuando un avión surcaba el cielo. Nos enorgullecemos de ser el lugar donde las historias se cruzan, donde las experiencias se comparten y donde cada vuelo es una celebración de la pasión por volar. Aquí, los recuerdos se entrelazan con las aspiraciones, creando una red de sueños y logros que elevan el espíritu y nos conectan con la emoción de la libertad en el aire. Nos esforzamos por brindar un espacio inclusivo donde todos, desde los entusiastas más novatos hasta los veteranos en el mundo de la aviación, se sientan bienvenidos y encuentren un sentido de pertenencia en nuestra comunidad apasionada y comprometida.
+                </p>
+            </div>
+            
+        </div>
+    
+    </section>
+
+<!--Cursos-->
+<section class="cursos">
+    <h1>Cursos que ofrecemos</h1>
+    <p>A volar a volar!</p>
+
+    <div class="row">
+        <div class="curso-col">
+            <a href="informacion.html" target="_blank">
+                <h3>Piloto Privado de avión</h3>
+                <p>El curso de Piloto Privado es el primer paso 
+                    para comenzar a volar y obtener tu licencia de piloto. <br> <br>
+                </p>
+            </a>
+        </div>
+        <div class="curso-col">
+            <a href="informacion.html" target="_blank">
+                <h3>Curso de instructor de Vuelo</h3>
+                <p>Comienza a volar y transmitir tus conocimientos a los demás. 
+                    Así es como devolvemos la mano a quienes vienen detrás de nosotros. 
+                    Fórmate como instructor de vuelo y sé un formador de pilotos.</p> <br> <br>
+            </a>
+        </div>
+        <div class="curso-col">
+            <a href="informacion.html" target="_blank">
+                <h3>Piloto comercial</h3>
+                <p> Tu siguiente paso, si lo que quieres es 
+                    desempeñarte profesionalmente es ser 
+                    Piloto Comercial. </p> <br> <br>
+            </a>
+        </div>
+    </div>
+
+</section>
+
+<!----Ubicación---->
+
+<section class="ubicacion" id="ubicacion">
+    <h1>¿Dónde estamos ubicados?</h1>
+    <p>Ven a conocernos estamos a sólo 30 minutos desde Santiago. En Ruta 68, km. 53 ½, Curacaví.</p>
+    <div class="ubicacion-container">
+        <div class="ubicacion-col">
+            <a href="https://www.google.com/maps/place/Aerodromo+Curacavi/@-33.4145097,-71.1706912,16z/data=!4m6!3m5!1s0x9662f538e2c96333:0xdca3bf9cef6787da!8m2!3d-33.4125395!4d-71.1663889!16s%2Fm%2F0wymrf5?entry=ttu" target="_blank">
+            <img src="images/ubicación.jpg">
+            <div class="layer">
+                <h3>Aeródromo Curacaví</h3>
+            </div>
+        </a>
+        </div>
+    </div>
+</section>
+
+<!----Facilidades---->
+
+<section class="facilidades" id="facilidades">
+    <h1>Facilidades</h1>
+    <div class="row">
+        <div class="facilidades-col">
+            <a href="ptz.html" target="_blank">
+                <img src="images/ptz.jpg" alt="PTZ">
+            </a>
+            <h3>CC-PTZ un avión con historia. <br> <br> Conócelo.</h3>
+            <p>En julio de 1964, la Fuerza Aérea de Estados Unidos (USAF), adquirió a la Cessna Aircraft Company un total de 204 aparatos modelo C-172F Skyhawk, con el propósito de ser utilizados para demostrar aptitudes de vuelo entre los cadetes de la USAF.</p>
+            
+            <p>Antes de llegar al entrenador avanzado Cessna T-37 Tweety Bird, estas aeronaves recibieron la designación militar T-41A “Mescalero”, siendo entregadas a partir de 1965. Dentro de esas 204 máquinas figura el actual CC-PTZ. <br> <br> El CC-PTZ prestó servicios en el Air Training Command (ATC), actual Air Education and Training Command (AETC), ubicado en la Base Aérea Randolph AFB, localizada en Universal City, estado de Texas. Recibió la designación USAF 65-5146 y matrícula civil N5146F. El uso del registro civil se debió a que estos aparatos fueron utilizados también por el Club Aéreo de la USAF, encargado de acoger tanto al personal activo como en retiro de la institución. Durante 1968, este aparato junto con el resto de los T-41A, fueron reemplazados por la nueva versión T-41C, equipada con el nuevo motor Continental IO-360H, de 210hp. Ese mismo año de su retiro, la Fuerza Aérea de Chile adquirió un total de nueve T-41A a la USAF, entre los cuales se incluyó este aparato. En nuestro país fue designado FACh 201 y sirvió en distintas unidades como avión de enlace, incluyendo su paso por la Escuela de Especialidades.</p>
+            
+            <button class="read-more-btn">Leer más</button>
+            
+            <p class="additional-text hidden">Donde fue utilizado para mantenimiento de eficiencia de vuelo. En 1978, junto al resto de la flota, recibió un mimetismo especial debido a la posibilidad de guerra con Argentina por el Conflicto del Canal Beagle. El día 26 de octubre de 1984, es retirado de la institución y donado al Centro de Ex Cadetes y Oficiales FACh “Águilas Blancas”, siendo registrado CC-PNV. Posteriormente, el 17-01-2001 es re-registrado por la misma organización, como CC-LVV. Con el paso del tiempo, Águilas Blancas lo vende y cambia su matrícula por la actual CC-PTZ. Desde el año 2018, pertenece al Club Aéreo Alas del Maipo, donde continúa formando a nuevas generaciones de pilotos. En 2020 tuvo un recambio de su motor Continental O-300D de 145hp, posible gracias al Fondo de Fomento a la Aviación Civil no comercial, entregado por la Dirección General de Aeronáutica Civil. Extracto de la historia publicado por José Nicolás Rodríguez y Ricardo Leyton quienes son parte del Equipo TallyHo. | <br> <br><small>https://tallyho.cl/conociendo-el-cessna-c-172f-skyhawk-t-41a-mescalero-del-club-aereo-alas-del-maipo/</small></p>
+            
+        </p>
+        </a>
+        </div>
+        <div class="facilidades-col">
+            <a href="presidentes.html" target="_blank">
+            <img src="images/directorio2.jpg">
+            <h3>Directorio</h3>
+            <p><strong>Mario Barra Carrasco </strong><br>
+                Presidente y Fundador <br>
+                Piloto Privado, Instructor de vuelo <br> <br> <br>
+
+                <strong>Jorge Núñez Flores</strong> <br>
+                Director y Jefe de Escuelab <br>
+                Ex - comandante de Línea Aérea <br>
+                Piloto Comercial. <br> <br> <br>
+
+                <strong>Claudio Araya Araos</strong> <br>
+                Director Tesorero <br>
+                Ingeniero Comercial – Contador Auditor <br>
+                Alumno Piloto <br> <br> <br>
+
+                <strong>Jorge Castillo Torres</strong> <br>
+                Director Secretario <br>
+                Piloto Privado- Instructor de Vuelo <br> <br> <br>
+
+                </p>
+        </a>
+        </div>
+        <div class="facilidades-col">
+            <a href="informacion.html" target="_blank">
+            <img src="images/cursopiloto.jpg"> <br>
+            <br> <h4><strong>&nbsp;¿Por qué pertenecer al Alas del Maipo?</strong></h4> 
+            <p>Ingresar al Club Aéreo Alas del Maipo, 
+                significa ingresar a un grupo de amigos 
+                que busca fortalecer lazos de amistad, 
+                camaradería, experiencia y aprendizaje 
+                hablando y creando historias a través del buen trato, 
+                cordialidad, buen ambiente y sobre todo conversando en el 
+                mismo idioma que nos apasiona, enfocándonos en estar atentos a 
+                servir tanto a nuestros socios, sus familias y la comunidad apoyando el crecimiento y 
+                fortalecimiento de la aviación en comunión y seguridad </p> 
+                <h4>&nbsp;¿Como Ingresar?</h4>
+                <p>Requisitos de ingresos <br>
+                    -Carta Solicitud Ingreso <br>
+                    -Carta recomendación de un socio del Club, Instructor de vuelo, o club aéreo anterior. <br>
+                    -Certificado Antecedentes <br>
+                    -Comprobante pago Cuota membresía <br>
+                    -Comprobante pago Mensualidad <br>
+                    -Carta compromiso de aceptación reglamento y estatutos  <br>
+                    -Membresía 50 UF <br>
+                    -Cuota Social $40.000 <br>
+                    
+                    Contáctanos!</p>
+        </a>
+        </div>
+    </div>
+</section>
+
+<!----Comentarios---->
+
+<section class="comentarios" id="comentarios">
+    <h1> <i class="fa fa-star"></i> Socios destacados <i class="fa fa-star"></i></h1>
+    <div class="row">
+        <div class="comentarios-col">
+            <img src="images/fotoseñor.jpg">
+            <div>
+                <h3>Felipe Alcérreca Bontempi</h3>
+                <p>
+                    Piloto de Línea Aérea con más de 30 mil horas voladas, 
+                     siendo uno de los pioneros de la aviación nacional, volando en las 
+                     principales aerolíneas del país, tanto en vuelos domésticos como 
+                     internacionales.  Únete a nosotros y 
+                     conoce sus innumerables aventuras y experiencias en vuelo.
+                 </p>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+            </div>
+        </div>
+        <div class="comentarios-col">
+            <img src="images/Sergio.jpg">
+            <div>
+                <h3>Sergio Acevedo Quinteros</h3>
+                <p>
+                    alumno del club aéreo, que ha decido después de 
+                    una exitosa carrera profesional, comenzar su carrera 
+                    como piloto y poner sus energías en la aviación civil y 
+                    deportiva; logrando sus vuelos solos y ya próximo a obtener su licencia de Piloto Privado. 
+                    Felicidades!
+                </p>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+            </div>
+        </div>
+        <div class="comentarios-col">
+            <img src="images/Logo-recorte-circular.png">
+            <div>
+                <p>
+
+                </p>
+                <h3>Otros socios +</h3>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+            </div>
+        </div>
+        <div class="comentarios-col">
+            <img src="images/Logo-recorte-circular.png">
+            <div>
+                <p>
+                </p>
+                <h3>Otros socios +</h3>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-----Call to action-->
+<section class="cta" id="cta">
+    <h1>¡Sé parte de la familia! &#128526;</h1>
+    <a href="https://wa.me/+56967236616" class="hero-btn" target="_blank">¡Hablémos!</a>
+</section>
+<!-----Footer-->
+
+<section class="footer" id="footer">
+    <h4>Sobre nosotros</h4>
+    <p>
+        Somos Los Pilotos del Maipo; Camaradería, Amistad y Empuje. <br>
+         A volar a volar!! Te esperamos en el Aeródromo de Curacaví.
+    </p>
+    <div class="icons">
+        <a href="https://www.facebook.com/alasdel.maipo/" target="_blank">
+            <i class="fa fa-facebook"></i>
+        </a>
+        <a href="https://www.instagram.com/caam.cl/" target="_blank">
+            <i class="fa fa-instagram"></i>
+        </a>
+        <a href="https://twitter.com" target="_blank">
+            <i class="fa fa-twitter"></i>
+        </a>
+        <a href="https://wa.me/+56967236616" target="_blank">
+            <i class="fa fa-whatsapp"></i>
+        </a>
+    </div>
+    <p> &copy; 2024 Club Aéreo Alas del Maipo <br> Created By: Fufudev <i class="fa fa-plane"></i></p>
+</section>
+
+<!-----JavaScript para el menú ----->
+
+<script>
+    // Funciones para mostrar y ocultar el menú de navegación
+
+    const navLinks = document.getElementById("navLinks");
+    const barsIcon = document.querySelector('.fa-bars');
+    const closeIcon = document.querySelector('.fa-times');
+
+    function showMenu() {
+        navLinks.style.right = "0";
+    }
+
+    function hideMenu() {
+        navLinks.style.right = "-200px";
+    }
+
+    barsIcon.addEventListener('click', function () {
+        showMenu();
+        barsIcon.style.display = "none";
+        closeIcon.style.display = "block";
+    });
+
+    closeIcon.addEventListener('click', function () {
+        hideMenu();
+        barsIcon.style.display = "block";
+        closeIcon.style.display = "none";
+    });
+
+    document.addEventListener("DOMContentLoaded", function () {
+    });
+
+    // Obtener todos los botones "Leer más"
+const readMoreButtons = document.querySelectorAll('.read-more-btn');
+
+    document.addEventListener("DOMContentLoaded", function () {
+            // Obtener todos los botones "Leer más"
+            const readMoreButtons = document.querySelectorAll('.read-more-btn');
+
+            // Para cada botón, agregar un evento clic
+            readMoreButtons.forEach((button, index) => {
+                button.addEventListener('click', () => {
+                    // Obtener el párrafo con el texto adicional correspondiente a este botón
+                    const additionalText = document.querySelectorAll('.additional-text')[index];
+
+                    // Alternar la visibilidad del texto adicional
+                    additionalText.classList.toggle('hidden');
+
+                    // Cambiar el texto del botón entre "Leer más" y "Leer menos"
+                    button.textContent = additionalText.classList.contains('hidden') ? 'Leer más' : 'Leer menos';
+                });
+            });
+        });
+
+</script>
+</body>
+
+</html>

@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Impresión de Licencias de Vuelo</title>
+    <link rel="stylesheet" href="imprimir.css">
+    <link rel="icon" href="images/Logo-recorte-circular.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rethink+Sans:ital,wght@0,400;0,500;1,400;1,500;1,800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="icon" href="images/logotittle.jpeg" type="image/x-icon">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="header-container">
+            <a href="index.html">
+                <img class="logo" src="images/logo.jpg" alt="Logo">
+            </a>
+            <p class="titulo">🛩️¡Imprime tu licencia de piloto con nosotros!🛩️</p>
+        </div>
+    </header>
+
+    <div class="plans-container">
+    <div class="plan">
+		<div class="inner">
+			<span class="pricing">
+				<span>
+					CLP $6.000
+				</span>
+			</span>
+			<p class="title">Privado</p>
+			<p class="info">Este opción te permite imprimir con nosotros tu licencia de piloto privado.</p>
+			<ul class="features">
+				<li>
+					<span class="icon">
+						<svg height="24" width="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+							<path d="M0 0h24v24H0z" fill="none"></path>
+							<path fill="currentColor" d="M10 15.172l9.192-9.193 1.415 1.414L10 18l-6.364-6.364 1.414-1.414z"></path>
+						</svg>
+					</span>
+					<span>Pago rápido</span>
+				</li>
+				<li>
+					<span class="icon">
+						<svg height="24" width="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+							<path d="M0 0h24v24H0z" fill="none"></path>
+							<path fill="currentColor" d="M10 15.172l9.192-9.193 1.415 1.414L10 18l-6.364-6.364 1.414-1.414z"></path>
+						</svg>
+					</span>
+					<span>Impresión<strong> rápida</strong></span>
+				</li>
+				<li>
+					<span class="icon">
+						<svg height="24" width="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+							<path d="M0 0h24v24H0z" fill="none"></path>
+							<path fill="currentColor" d="M10 15.172l9.192-9.193 1.415 1.414L10 18l-6.364-6.364 1.414-1.414z"></path>
+						</svg>
+					</span>
+					<span>Entrega a coordinar</span>
+				</li>
+			</ul>
+			<div class="action">
+			<a class="button" a href="https://wa.me/+56962478222/?text=Hola,%20me%20interesa%20imprimir%20mi%20licencia%20de%20Piloto%20privado." target="_blank">
+				¡Conseguir licencia!
+			</a>
+			</div>
+		</div>
+    </div>
+
+
+    <div class="plan">
+		<div class="inner">
+			<span class="pricing">
+				<span>
+					CLP $6.000
+				</span>
+			</span>
+			<p class="title">Comercial</p>
+			<p class="info">Esta opción te permite imprimir con nosotros tu licencia de piloto comercial.</p>
+			<ul class="features">
+				<li>
+					<span class="icon">
+						<svg height="24" width="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+							<path d="M0 0h24v24H0z" fill="none"></path>
+							<path fill="currentColor" d="M10 15.172l9.192-9.193 1.415 1.414L10 18l-6.364-6.364 1.414-1.414z"></path>
+						</svg>
+					</span>
+					<span> Pago rápido</span>
+				</li>
+				<li>
+					<span class="icon">
+						<svg height="24" width="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+							<path d="M0 0h24v24H0z" fill="none"></path>
+							<path fill="currentColor" d="M10 15.172l9.192-9.193 1.415 1.414L10 18l-6.364-6.364 1.414-1.414z"></path>
+						</svg>
+					</span>
+					<span>Impresión <strong>rápida</strong></span>
+				</li>
+				<li>
+					<span class="icon">
+						<svg height="24" width="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+							<path d="M0 0h24v24H0z" fill="none"></path>
+							<path fill="currentColor" d="M10 15.172l9.192-9.193 1.415 1.414L10 18l-6.364-6.364 1.414-1.414z"></path>
+						</svg>
+					</span>
+					<span>Entrega a coordinar</span>
+				</li>
+			</ul>
+			<div class="action">
+			<a class="button" a href="https://wa.me/+56962478222/?text=Hola,%20me%20interesa%20imprimir%20mi%20licencia%20de%20Piloto%20Comercial." target="_blank">
+				¡Conseguir licencia!
+			</a>
+			</div>
+		</div>
+	</div>
+</div>
+
+        <!-- Modal -->
+        <div id="modal-privado" class="modal" onclick="cerrarModal('modal-privado')">
+            <div class="modal-content">
+                <span class="modal-close">&times;</span>
+                <img src="imagen_privado.jpg" alt="Datos de transferencia para Licencia de Piloto Privado" style="width:100%">
+            </div>
+        </div>
+    
+        <div id="modal-comercial" class="modal" onclick="cerrarModal('modal-comercial')">
+            <div class="modal-content">
+                <span class="modal-close">&times;</span>
+                <img src="imagen_comercial.jpg" alt="Datos de transferencia para Licencia de Piloto Comercial" style="width:100%">
+            </div>
+        </div>
+
+        <script>
+            function mostrarImagen(tipo) {
+                var modal = document.getElementById(`modal-${tipo}`);
+                modal.style.display = "block";
+            }
+    
+            function cerrarModal(idModal) {
+                var modal = document.getElementById(idModal);
+                modal.style.display = "none";
+            }
+        </script>
+
+    <!-- Recuadros -->
+
+    <section class="recuadros">
+        <div class="recuadros-container">
+            <div class="recuadro">
+                <h2>Proceso de Impresión Rápido</h2>
+                <p>Obtén tu licencia impresa en pocos días. 🚀</p>
+            </div>
+            <div class="recuadro">
+                <h2>Calidad Garantizada</h2>
+                <p>Garantizamos licencias de vuelo legítimas y de alta calidad. ✨</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contacto -->
+    <section class="contacto">
+        <div class="contacto-container">
+            <h2>Contacto</h2>
+            <p>Para más información, contáctanos:</p>
+            <ul>
+                <li>Email: mbarra@retromel.cl</li>
+                <li>Teléfono: +56 9 6247 8222</li>
+                <li>Dirección: Aérodromo Curacaví</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <p> &copy; 2024 Club Aéreo Alas del Maipo <br> Created By: Fufudev <i class="fa fa-plane"></i></p>
+            <div class="redes-sociales">
+                <a href="https://www.facebook.com/alasdel.maipo/" target="_blank">
+                    <i class="fa fa-facebook"></i>
+                </a>
+                <a href="https://www.instagram.com/caam.cl/" target="_blank">
+                    <i class="fa fa-instagram"></i>
+                </a>
+                <a href="https://twitter.com" target="_blank">
+                    <i class="fa fa-twitter"></i>
+                </a>
+                <a href="https://wa.me/+56967236616" target="_blank">
+                    <i class="fa fa-whatsapp"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
